@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Table</title>
+  <style>
+    table {
+      width: 60%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    th,
+    td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    th {
+      background-color: #4A628A;
+      color: white;
+    }
+
+    tfoot td {
+      background-color: #E4E0E1;
+      font-weight: bold;
+    }
+
+    .lab {
+      background-color: #FFB0B0;
+    }
+
+    .elective {
+      background-color: #FFECC8;
+    }
+
+    tr:nth-child(even) {
+      background-color: #7AB2D3;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #B9E5E8;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Class Time Table</h1>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="8">Time Table</th>
+      </tr>
+      <tr>
+        <th>Day</th>
+        <th>9:00 - 10:00</th>
+        <th>10:00 - 11:00</th>
+        <th>11:00 - 12:00</th>
+        <th>12:00 - 1:00</th>
+        <th>1:00 - 2:00</th>
+        <th>2:00 - 3:00</th>
+        <th>3:00 - 4:00</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Monday</td>
+        <td>TOC</td>
+        <td>SE</td>
+        <td>CN</td>
+        <td>EVS</td>
+        <td class="elective">Elective: AI</td>
+        <td>AI</td>
+        <td>RM</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>SE</td>
+        <td>TOC</td>
+        <td>CN</td>
+        <td>EVS</td>
+        <td>AI</td>
+        <td class="lab" colspan="2">WEB LAB (2 Hours)</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>TOC</td>
+        <td>SE</td>
+        <td>CN</td>
+        <td class="elective">Elective: RM</td>
+        <td colspan="3" class="lab">WEB LAB (2 Hours)</td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td>CN</td>
+        <td>SE</td>
+        <td>AI</td>
+        <td>TOC</td>
+        <td>EVS</td>
+        <td class="elective">Elective: RM</td>
+        <td>SE</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>AI</td>
+        <td>TOC</td>
+        <td>CN</td>
+        <td>EVS</td>
+        <td colspan="2" class="lab">WEB LAB (2 Hours)</td>
+        <td>RM</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="8">End of Timetable</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+
+</html>
