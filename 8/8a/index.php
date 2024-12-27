@@ -13,6 +13,7 @@ $visitorCount++;
 // Write the new count back to the file
 file_put_contents($counterFile, $visitorCount);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
